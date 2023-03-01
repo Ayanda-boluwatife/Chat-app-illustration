@@ -1,0 +1,249 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section{
+    background-color: hsl(0, 0%, 100%);
+    height: 150vh;
+    width: 100%;
+}
+
+.chat{
+    background: linear-gradient(to top, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    height: 90vh;
+    width: 35%;
+    border-bottom-right-radius: 300px;
+    border-bottom-left-radius: 150px;
+}
+
+.phone{
+    background-color: hsl(270, 20%, 96%);
+    width: 25%;
+    box-shadow: 0 6px 6px black, 0px 6px 0px black;
+    position: absolute;
+    top: 7%;
+    left: 25%;
+    border-radius: 20px;
+}
+
+.nav{
+    background: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    height: 10vh;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.nav img{
+    width: 50px;
+    border-radius: 30px;
+}
+
+.name{
+    font-size: 10px;
+    color: white;
+}
+
+.content::before{
+    content: "\15456";
+    color: white;
+}
+
+.content2::before{
+    content: "\298765";
+    color: white;
+}
+.item1{
+    background-color: hsl(0, 5%, 84%);
+    border-radius: 10px;
+    width: 180px;
+    color: hsl(276, 55%, 52%);
+    margin: 10px;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.item2{
+    background-color: hsl(0, 5%, 84%);
+    border-radius: 10px;
+    width: 230px;
+    color: hsl(276, 55%, 52%);
+    margin: 10px;
+    display: flex;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.dogs img{
+    width: 50px;
+    float: right;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.item3{
+    background-color: white;
+    border-radius: 10px;
+    width: 180px;
+    color: hsl(271, 15%, 43%);
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    font-size: 10px;
+    float: right;
+}
+
+.item4{
+    background-color: white;
+    border-radius: 10px;
+    width: 130px;
+    color: hsl(271, 15%, 43%);
+    margin: 10px;
+    display: flex;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    float: right;
+}
+
+.item5{
+    background-color: hsl(0, 5%, 84%);
+    border-radius: 10px;
+    width: 230px;
+    color: hsl(276, 55%, 52%);
+    margin: 10px;
+    display: flex;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.item6{
+    background: linear-gradient(to left, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    border-radius: 10px;
+    width: 180px;
+    color:white;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.item7{
+    background: linear-gradient(to left, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    border-radius: 10px;
+    width: 180px;
+    color:white;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.content3::before{
+    content: "\2610";
+    color: white;
+}
+
+.content4::before{
+    content: "\2610";
+    color: white;
+}
+
+.flex1{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex2{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+  width: 90%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+input::placeholder{
+    color: hsl(206, 6%, 79%);
+    font-size: small;
+}
+
+.send{
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    position: absolute;
+    top: 92.5%;
+    left: 82%;
+    cursor: pointer;
+}
+
+.send::before{
+    content: "\2630";
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.simple{
+    background-color: white;
+    width: 40%;
+    position: absolute;
+    top: 30%;
+    left: 55%;
+    display: flex;
+    flex-direction: column;
+    font-size: 2vw;
+    margin-top: 80px;
+    gap: 20px;
+}
+
+.simple p{
+    color:  hsl(270, 7%, 64%);
+}
+
+@media screen and (max-width:900px) {
+    .phone{
+        width: 60%;
+    }
+
+    .simple{
+        top: 100%;
+        left: 10%;
+        font-size: 5vw;
+        width: 80%;
+        gap: 20px;
+    }
+
+    .simple p{
+        font-size: 20px;
+    }
+}
